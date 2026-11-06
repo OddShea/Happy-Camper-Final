@@ -1,0 +1,303 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f1e8;
+    color: #222;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #16617d;
+    color: white;
+    padding: 25px 40px;
+}
+
+.header-container {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* main */
+
+main {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 20px;
+    flex: 1;
+}
+
+h1 {
+    color: #16617d;
+    font-size: 36px;
+}
+
+h2 {
+    color: #16617d;
+}
+
+/*Home page*/
+
+.hero {
+    text-align: center;
+    padding: 45px 30px;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.hero-text {
+    max-width: 700px;
+    margin: 0 auto 30px;
+}
+
+.hero-text p {
+    line-height: 1.8;
+    margin-bottom: 24px;
+}
+
+.hero-image {
+    display: block;
+    width: 100%;
+    max-width: 850px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 0 auto 25px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #16617d;
+    color: white;
+    text-decoration: none;
+    padding: 14px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #0f4d64;
+}
+
+.about-image-container {
+    margin-top: 35px;
+    text-align: center;
+}
+
+.about-image {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+@media (max-width: 750px) {
+    .about-image {
+        height: 240px;
+    }
+}
+
+/*columns*/
+
+.features {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.feature-box {
+    flex: 1;
+    background-color: #16617d;
+    color: white;
+    padding: 25px;
+    text-align: center;
+    border-radius: 5px
+}
+
+.feature-box h3 {
+    margin-top: 0;
+}
+
+/*Campsite cards*/
+
+.campsite-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.campsite-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.campsite-card h2 {
+    margin-top: 0;
+}
+
+.campsite-card p {
+    line-height: 1.5;
+}
+
+.campsite-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+/*forms*/
+
+.form-container {
+    max-width: 650px;
+    margin: auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}
+
+.checkbox-group {
+    margin-top: 15px;
+}
+
+.checkbox-group label {
+    font-weight: normal;
+    margin-top: 8px;
+}
+
+input[type="submit"] {
+    margin-top: 25px;
+    background-color: #16617d;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background-color: #0f4d64;
+}
+
+/*Error/success message*/
+.error {
+    color: #a52a2a;
+    background-color: #f9dddd;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+.success {
+    color: #245c35;
+    background-color: #dceedd;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+/*recommendation cards*/
+
+.recommendation {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-left: 6px solid #16617d;
+    border-radius: 5px;
+}
+
+.recommendation h2 {
+    margin-top: 0;
+}
+
+.match-reason {
+    font-style: italic;
+    color: #555;
+}
+
+/*footer*/
+
+footer {
+    background-color: #16617d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+/*mobile*/
+
+@media (max-width: 750px) {
+    .header-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 5px;
+        display: inline-block;
+    }
+
+    .features {
+        flex-direction: column;
+    }
+
+    .campsite-grid {
+        grid-template-columns: 1fr;
+    }
+}
